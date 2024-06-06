@@ -8,7 +8,7 @@ body, html {
     background: url('cover-image.jpg') no-repeat center center;
     background-size: cover;
     /* Adjust this value based on how much of the page you want the image to cover */
-    height: 50%; 
+    height: 90%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,4 +25,73 @@ h1 {
 p {
     margin: 10px 0 0;
     font-size: 1.2em;
+}
+
+/* Add this new CSS for the header */
+header {
+    background-color: #fff; /* Choose a color that fits your design */
+    padding: 10px 0; /* Add padding to give some space inside the header */
+    text-align: center; /* Center the navigation links */
+}
+
+header nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display list items in a row */
+    justify-content: center; /* Center the list items horizontally */
+    gap: 20px; /* Add space between the list items */
+}
+
+header nav ul li {
+    display: inline; /* Display list items inline */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #2B8EDE; /* Set text color for links */
+    font-weight: bold; /* Make font bold */
+    padding: 8px 15px; /* Add padding around the links for better clickability */
+    border-radius: 5px; /* Optional: Add rounded corners to links */
+    background-color: #f8f8f8; /* Optional: Add background color to links */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+header nav ul li a:hover {
+    background-color: #e2e2e2; /* Change background on hover */
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: #FF4081;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* space between features */
+}
+
+.feature:nth-child(odd) {
+    flex-direction: row-reverse; /* reverses the order for the second feature */
+}
+
+.feature img {
+    width: 20%;
+    height: auto;
+    margin: 0 40px; /* adds spacing between the text and the image */
+}
+
+.feature-text {
+    width: 30%;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
